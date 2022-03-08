@@ -1,5 +1,5 @@
 FROM openjdk:11
-COPY target/*.jar /
+COPY . /src/java
 WORKDIR /src/java
 EXPOSE 9080
 ADD target/docker-jenkins-sample.jar docker-jenkins-sample.jar
